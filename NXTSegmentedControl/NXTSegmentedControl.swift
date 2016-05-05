@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIEdgeInsets {
+internal extension UIEdgeInsets {
     static var zero: UIEdgeInsets {
         return UIEdgeInsets()
     }
@@ -19,7 +19,7 @@ extension UIEdgeInsets {
     }
 }
 
-extension UIView {
+internal extension UIView {
     func constrainFillingSuperview() {
         self.constrainFillingSuperview(insets: UIEdgeInsets.zero)
     }
